@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-div.trainInside{
+div.train{
     background-image: url('C:/Users/tomo7/OneDrive/Desktop/Personal_Programming_Projects/V-tor_Graphica/Personal Website/imgs/Draft_Train_BG.png');
     background-size: 100%;
     background-position-y: 70px;
@@ -18,16 +18,37 @@ div.trainInside{
     }
 }
 
-.trainInside{
+.train{
     /*border: solid green 3px;*/
     overflow-x: scroll;
     float: left;
     margin: 0;
+    display: grid;
 }
 
-#train{
+.train > *{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.trainInside{
     object-fit: cover;
     height: 95vh;
     width: auto;
     display: block;
+
+    animation: defaultShaking 2s infinite;
+}
+
+@keyframes defaultShaking{
+    0% { transform: translate(0, 0px); }
+    10% { transform: translate(0, 1px); }
+    20% { transform: translate(0, 0px); }
+    30% { transform: translate(0, -10px); }
+    40% { transform: translate(0, 1px); }
+    50% { transform: translate(0, 0px); }
+    55% { transform: translate(0, -5px); }
+    70% { transform: translate(0, 2px); }
+    80% { transform: translate(0, 0px); }
+    100% { transform: translate(0, 0px); }
 }
