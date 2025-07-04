@@ -1,17 +1,33 @@
-.trainInside{
-    border: solid green 1px;
-    object-fit: none;
-    overflow-x: scroll;
+body{
+    margin: 0;
 }
 
-.train{
-    object-fit: cover;
-    height: 100%;
-    width: auto;
+div.trainInside{
+    background-image: url('C:/Users/tomo7/OneDrive/Desktop/Personal_Programming_Projects/V-tor_Graphica/Personal Website/imgs/Draft_Train_BG.png');
+    background-size: 100%;
+    background-position-y: 70px;
+    animation: defaultMoving 100000s linear infinite;
+}
+
+@keyframes defaultMoving{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -200000000px;
+    }
+}
+
+.trainInside{
+    /*border: solid green 3px;*/
     overflow-x: scroll;
+    float: left;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+}
+
+#train{
+    object-fit: cover;
+    height: 95vh;
+    width: auto;
+    display: block;
 }
