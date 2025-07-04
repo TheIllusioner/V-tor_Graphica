@@ -1,4 +1,17 @@
 .trainInside{
+    border: solid green 1px;
+    object-fit: none;
+    overflow-x: scroll;
+}
+
+.train{
+    object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: auto;
+    overflow-x: scroll;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
