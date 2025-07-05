@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.fisheye_train{
+    float: left;
+    margin: 0;
+    display: grid;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fisheye_train > *{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.fisheye_inside{
+    object-fit: cover;
+    height: 95vh;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

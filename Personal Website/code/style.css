@@ -10,7 +10,7 @@ body{
 }
 
 div.train{
-    background-image: url('C:/Users/tomo7/OneDrive/Desktop/Personal_Programming_Projects/V-tor_Graphica/Personal Website/imgs/Draft_Train_BG.png');
+    background-image: url('../imgs/Draft_Train_BG.png');
     background-size: 100%;
     background-position-y: 70px;
     animation: defaultMoving 100000s linear infinite;
@@ -43,6 +43,7 @@ div.train{
     height: 95vh;
     width: auto;
     display: block;
+    /*border: solid green 3px;*/
 
     animation: defaultShaking 2s infinite;
 }
@@ -58,4 +59,17 @@ div.train{
     70% { transform: translate(0, 2px); }
     80% { transform: translate(0, 0px); }
     100% { transform: translate(0, 0px); }
+}
+
+.abt_link{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: solid blue 3px;*/
+}
+
+#illusioner{
+    height: 51.8vh;
+    margin-top: 40.8vh;
+    /*border: solid red 3px;*/
 }
