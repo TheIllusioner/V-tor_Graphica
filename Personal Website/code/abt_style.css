@@ -7,14 +7,11 @@ body{
 }
 
 .fisheye_train{
-    background-color: blue;
     display: block;
     aspect-ratio: 1959/1080;
     height: 80vh;
     top: 10%;
     position: absolute;
-
-    animation: defaultShaking 2s infinite;
 }
 
 /* .fisheye_train > *{
@@ -26,6 +23,9 @@ body{
     object-fit: contain;
     height: 80vh;
     width: auto;
+    background-color: blue;
+
+    animation: defaultShaking 2s infinite;
 }
 
 @keyframes defaultShaking{
