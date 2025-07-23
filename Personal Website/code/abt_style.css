@@ -14,10 +14,10 @@ body{
     position: absolute;
 }
 
-/* .fisheye_train > *{
+/*.fisheye_train > *{
     grid-column-start: 1;
     grid-row-start: 1;
-} */
+}*/
 
 .fisheye_inside{
     object-fit: contain;
@@ -26,6 +26,14 @@ body{
     background-color: blue;
 
     animation: defaultShaking 2s infinite;
+}
+
+#zoomOne{
+    display: block;
+}
+
+#zoomTwo{
+    display: none;
 }
 
 @keyframes defaultShaking{
@@ -44,11 +52,41 @@ body{
 .diaBox{
     background-color:rgb(222, 250, 250);
     border: solid black 3px;
-    aspect-ratio: 3 / 4;
-    height: auto;
-    width: 30%;
     position: absolute;
+    font-size: 1vw;
+    height: 72%;
+    width: auto;
     top: 10%;
-    left: 75%;
     padding: 1%;
+}
+
+a{
+    color: #551a8B;
+    text-decoration-line: underline;
+}
+
+#boxOne{
+    display: block;
+    aspect-ratio: 3 / 4;
+    left: 75%;
+}
+
+#boxTwo{
+    display: none;
+    aspect-ratio: 5 / 3;
+    margin-left: -5%;
+}
+
+#boxThree{
+    display: none;
+    aspect-ratio: 5 / 3;
+    margin-left: -5%;
+    height: 75%;
+    font-size: .9vw;
+}
+
+#boxFour{
+    display: none;
+    aspect-ratio: 5 / 3;
+    margin-left: -5%;
 }
