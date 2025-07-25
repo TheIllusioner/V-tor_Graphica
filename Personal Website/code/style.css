@@ -73,3 +73,30 @@ div.train{
     margin-top: 40.8vh;
     /*border: solid red 3px;*/
 }
+
+#nextStopLeft{
+    aspect-ratio: 5 / 2;
+    height: 10vh;
+    margin-left: 20.5vh;
+    margin-top: 13vh;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1vw;
+    /*border: solid green 3px;*/
+}
+
+#nextStopLeft p{
+    margin-top: 1vh;
+}
+
+#stopOne{
+    display: block;
+}
+
+#stopTwo{
+    display: none;
+}
+
+#stopThree{
+    display: none;
+}
