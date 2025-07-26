@@ -74,19 +74,37 @@ div.train{
     /*border: solid red 3px;*/
 }
 
-#nextStopLeft{
-    aspect-ratio: 5 / 2;
-    height: 10vh;
-    margin-left: 20.5vh;
-    margin-top: 13vh;
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1vw;
-    /*border: solid green 3px;*/
+.navi{
+    /*border: solid rgb(255, 0, 0) 3px;*/
+    display: flex;
+    aspect-ratio: 6.65 / 2;
+    height: 15vh;
+    margin-left: 8.3vh;
+    margin-top: 11vh;
+    align-items: center;
 }
 
-#nextStopLeft p{
-    margin-top: 1vh;
+.prevOption img{
+    object-fit: contain;
+    height: 11vh;
+}
+
+.nextOption img{
+    object-fit: contain;
+    height: 11vh;
+}
+
+#nextStopLeft{
+    height: 10vh;
+    width: 30vh;
+    /*margin-left: 20.5vh;
+    margin-top: 13vh;*/
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2.2vh;
+    padding-top: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
 
 #stopOne{
