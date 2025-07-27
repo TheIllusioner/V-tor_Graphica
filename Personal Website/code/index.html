@@ -8,19 +8,19 @@
 </head>
 
 <body>
-    <div class="train">
+    <div class="train" id="bg">
         <img src="..\imgs\Draft_Train_.png" alt="You are sitting inside a subway train. A character is staring at you from the seat in front of you." class="trainInside">
         <img src="..\imgs\Draft_Train_Doors.png" alt="train doors on either side of the seats" class="trainInside">
         <div class="navi trainInside">
-            <a class="prevOption">
+            <a onclick="prevStop()" class="prevOption">
                 <img src="..\imgs\prevArrow.png">
             </a>
             <div id="nextStopLeft">
-                <a id="stopOne">Next Stop: V-Tor Graphica Station Center</a>
-                <a id="stopTwo">Next Stop: V-Tor Graphica Void Beach</a>
-                <a id="stopThree">Next Stop: Proxia/Sector 5 Autostine Tech Station-A</a>
+                <a onclick="stopTrain('1')" id="stopOne">Next Stop: V-Tor Graphica Station Center</a>
+                <a onclick="stopTrain('2')" id="stopTwo">Next Stop: V-Tor Graphica Void Beach</a>
+                <a onclick="stopTrain('3')" id="stopThree">Next Stop: Proxia/Sector 5 Autostine Tech Station-A</a>
             </div>
-            <a class="nextOption">
+            <a onclick="nextStop()" class="nextOption">
                 <img src="..\imgs\nextArrow.png">
             </a>
         </div>
