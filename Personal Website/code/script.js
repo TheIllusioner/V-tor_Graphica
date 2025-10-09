@@ -1,4 +1,4 @@
-function fisheyeMove(){ //combine the first 3 functions into 1 eventually
+function fisheyeMove() { //combine the first 3 functions into 1 eventually
     var x = document.getElementById("zoomOne");
     var y = document.getElementById("zoomTwo");
     var q = document.getElementById("boxOne");
@@ -16,7 +16,7 @@ function fisheyeMove(){ //combine the first 3 functions into 1 eventually
     }
 }
 
-function fisheyeMoveTwo(){
+function fisheyeMoveTwo() {
     var x = document.getElementById("zoomOne");
     var y = document.getElementById("zoomTwo");
     var q = document.getElementById("boxOne");
@@ -34,7 +34,7 @@ function fisheyeMoveTwo(){
     }
 }
 
-function fisheyeMoveThree(){
+function fisheyeMoveThree() {
     var x = document.getElementById("zoomOne");
     var y = document.getElementById("zoomTwo");
     var q = document.getElementById("boxOne");
@@ -52,7 +52,7 @@ function fisheyeMoveThree(){
     }
 }
 
-function nextStop(){
+function nextStop() {
     const stops = [document.getElementById("stopOne"), document.getElementById("stopTwo"), document.getElementById("stopThree")];
     for(let j = 0; j < stops.length; j++)
     {
@@ -73,7 +73,7 @@ function nextStop(){
     }
 }
 
-function prevStop(){
+function prevStop() {
     const stops = [document.getElementById("stopOne"), document.getElementById("stopTwo"), document.getElementById("stopThree")];
     const lastStop = stops.length-1;
     for(let i = stops.length-1; i >= 0; i--)
@@ -95,9 +95,11 @@ function prevStop(){
     }
 }
 
-function stopTrain(stopNum){
+function stopTrain(stopNum) {
     const trainIn = document.getElementsByClassName("trainInside");
     const trainOut = document.getElementById("bg");
+    const doorsOpen = document.getElementById("doorsOpen");
+    const doorsClosed = document.getElementById("doorsClosed");
     trainOut.style.backgroundImage = "url('')";
     trainOut.style.animationDuration = "200000s";
     //console.log(trainIn);
@@ -109,22 +111,43 @@ function stopTrain(stopNum){
             el.addEventListener("animationiteration", () =>{
                 el.style.animationPlayState = "paused";
                 trainOut.style.animationPlayState = "paused";
+                doorsOpen.style.display = "none";
+                doorsClosed.style.display = "block";
                 if(stopNum === '1')
                 {
                     trainOut.style.backgroundColor = "#000000";
+                    goToStop('1');
                     console.log("stop one");
                 }
                 if(stopNum === '2')
                 {
                     trainOut.style.backgroundColor = "#7f00adff";
+                    goToStop('2');
                     console.log("stop two");
                 }
                 if(stopNum === '3')
                 {
                     trainOut.style.backgroundColor = "#0000ff";
+                    goToStop('3');
                     console.log("stop three");
                 }
             });
         }
+    }
+}
+
+function goToStop(stopNum) {
+    const outside = document.getElementById("outsideLeft");
+    if(stopNum === '1')
+    {
+        outside.href = "station_center.html";
+    }
+    if(stopNum === '2')
+    {
+        outside.href = "void_beach.html";
+    }
+    if(stopNum === '3')
+    {
+        outside.href = "sector_5_station_a.html";
     }
 }

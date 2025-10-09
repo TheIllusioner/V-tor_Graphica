@@ -39,6 +39,15 @@ body{
     grid-row-start: 1;
 }
 
+#outsideLeft{
+    height: 55vh;
+    width: 48vh;
+    margin-top: 28vh;
+    margin-left: 8vh;
+    position: absolute;
+    border: solid green 3px;
+}
+
 .trainInside{
     object-fit: cover;
     height: 95vh;
@@ -47,6 +56,14 @@ body{
     /*border: solid green 3px;*/
 
     animation: defaultShaking 2s infinite;
+}
+
+#doorsOpen{
+    display: block;
+}
+
+#doorsClosed{
+    display: none;
 }
 
 @keyframes defaultShaking{
