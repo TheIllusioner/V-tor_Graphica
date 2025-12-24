@@ -43,7 +43,13 @@ body{
     height: 55vh;
     width: 48vh;
     margin-top: 28vh;
-    margin-left: 8vh;
+    position: absolute;
+    border: solid green 3px;
+}
+#outsideRight{
+    height: 55vh;
+    width: 48vh;
+    margin-top: 28vh;
     position: absolute;
     border: solid green 3px;
 }
@@ -54,7 +60,9 @@ body{
     width: auto;
     display: block;
     /*border: solid green 3px;*/
+}
 
+.move{
     animation: defaultShaking 2s infinite;
 }
 
@@ -97,9 +105,16 @@ body{
     display: flex;
     aspect-ratio: 6.7 / 2;
     height: 15vh;
-    margin-left: 8.3vh;
     margin-top: 11vh;
     align-items: center;
+}
+
+.left{
+    margin-left: 8.3vh;
+}
+
+.right{
+    margin-left: 182vh;
 }
 
 .prevOption img{
@@ -109,10 +124,12 @@ body{
 
 .prevOption:hover{
     filter: brightness(70%);
+    cursor: pointer;
 }
 
 .nextOption:hover{
     filter: brightness(70%);
+    cursor: pointer;
 }
 
 .nextOption img{
@@ -120,7 +137,7 @@ body{
     height: 11vh;
 }
 
-#nextStopLeft{
+.nextStop{
     height: 10vh;
     width: 30.3vh;
     /*margin-left: 20.5vh;
@@ -133,14 +150,10 @@ body{
     padding-right: 5vh;
 }
 
-#stopOne{
+.nextStop a:hover{
+    cursor: pointer;
+}
+
+.stop{
     display: block;
-}
-
-#stopTwo{
-    display: none;
-}
-
-#stopThree{
-    display: none;
 }

@@ -9,25 +9,41 @@
 
 <body>
     <div class="train" id="bg">
-        <img src="..\imgs\Draft_Train_.png" alt="You are sitting inside a subway train. A character is staring at you from the seat in front of you." class="trainInside">
-        <img src="..\imgs\Draft_Train_Doors.png" alt="train doors on either side of the seats" class="trainInside" id="doorsOpen">
+        <img src="..\imgs\Draft_Train_.png" alt="You are sitting inside a subway train. A character is staring at you from the seat in front of you." class="trainInside move">
+        <img src="..\imgs\Draft_Train_Doors.png" alt="train doors on either side of the seats" class="trainInside move" id="doorsOpen">
         <img src="..\imgs\Draft_Train_Doors_Open.png" alt="the train doors are now open." class="trainInside" id="doorsClosed">
-        <a onclick="goToStop()" class="trainInside" id="outsideLeft"></a>
-        <div class="navi trainInside">
+
+        <!-- Outside space selection to exit the train, only visible once the train stops and the doors open -->
+        <a onclick="goToStop()" class="trainInside move left" id="outsideLeft"></a>
+        <a onclick="goToStop()" class="trainInside move right" id="outsideRight"></a>
+
+        <!-- Navigation for the left train doors -->
+        <div class="navi trainInside move left">
             <a onclick="prevStop()" class="prevOption">
                 <img src="..\imgs\prevArrow.png">
             </a>
-            <div id="nextStopLeft">
-                <a onclick="stopTrain('1')" id="stopOne">Next Stop: V-Tor Graphica / Station Center</a>
-                <a onclick="stopTrain('2')" id="stopTwo">Next Stop: V-Tor Graphica / Void Beach</a>
-                <a onclick="stopTrain('3')" id="stopThree">Next Stop: Proxia / Sector 5 Autostine Tech Station-A</a>
+            <div class="nextStop">
+                <a onclick="stopTrain()" class="stop">Next Stop: V-Tor Graphica / Station Center</a>
+            </div>
+            <a onclick="nextStop()" class="nextOption">
+                <img src="..\imgs\nextArrow.png">
+            </a>
+        </div>
+
+        <!-- Navigation for the right train doors -->
+        <div class="navi trainInside move right">
+            <a onclick="prevStop()" class="prevOption">
+                <img src="..\imgs\prevArrow.png">
+            </a>
+            <div class="nextStop">
+                <a onclick="stopTrain()" class="stop">Next Stop: V-Tor Graphica / Station Center</a>
             </div>
             <a onclick="nextStop()" class="nextOption">
                 <img src="..\imgs\nextArrow.png">
             </a>
         </div>
         
-        <div class="trainInside abt_link">
+        <div class="trainInside abt_link move">
             <a href="about.html">
                 <img src="..\imgs\Draft_Train_Illusioner.png" id="illusioner">
             </a>
