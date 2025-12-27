@@ -44,14 +44,14 @@ body{
     width: 48vh;
     margin-top: 28vh;
     position: absolute;
-    border: solid green 3px;
+    /* border: solid green 3px; */
 }
 #outsideRight{
     height: 55vh;
     width: 48vh;
     margin-top: 28vh;
     position: absolute;
-    border: solid green 3px;
+    /* border: solid green 3px; */
 }
 
 .trainInside{
